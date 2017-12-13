@@ -1,0 +1,45 @@
+p, textarea{
+  display: inline;
+}
+
+#paragraphes div {
+  position:relative;
+}
+
+.poignee{
+  position:absolute;
+  left:0px;cursor:move;
+}
+
+#paragraphes div {
+  padding-left:50px;
+}
+
+.emplacement{
+  background-color:lightgrey;
+  border:1px solid black;
+  height:25px;
+  width:100%;
+}
+
+#normal, #edit, #new_article, #new_paragraphe, #add_paragraphe{
+  display: none;
+}
+
+.item{
+  padding: 20px 20px;
+}
+
+.row{
+  padding:20px;
+}
+
+body{
+  margin-top: 20px;
+}
+
+.sad-icon{
+  width:100%;
+  font-size:150px;
+  padding-top:20px;
+}

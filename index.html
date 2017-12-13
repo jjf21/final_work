@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Articles UI</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+		<link href="public/css/ui-darkness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+		<link rel="stylesheet" href="public/css/style.css">
+	</head>
+	<body>
+		<div class='container'>
+			<div class='row z-depth-2'>
+				<h4 class='center'>
+					Gestion d'articles en SPA
+				</h4>
+				<div class='input-field col s8'>
+
+					<select id="articles" class="browser-defaultsssss">
+				    <option value="" disabled selected>Quel article voulez vous modifier ?</option>
+				  </select>
+				</div>
+				<div class='col s4 center' style='padding: 25px 0px 0px 0px;'>
+					<button data-target="modal1" type="button" name="button" class='modal-trigger waves-effect waves-light btn' id='create_article'><i class="material-icons left">add</i>
+						Creer un article
+					</button>
+				</div>
+
+				<div class='col s12 center'>
+					<button type="button" name="button" id='edit' class='waves-effect teal-text white waves-light btn'><i class="material-icons left">create</i>
+						Passer en mode edition
+					</button>
+					<button type="button" name="button" id='normal' class='waves-effect teal-text white waves-light btn'><i class="material-icons left">keyboard_return</i>
+						Revenir au mode normal
+					</button>
+				</div>
+				<div id="paragraphes" class='ui-sortable col s12'>
+				</div>
+
+
+			  <!-- Modal Add article Structure -->
+			  <div id="modal1" class="modal">
+			    <div class="modal-content">
+			      <h4>Créer un article</h4>
+						<label for="title">Titre</label>
+						<input placeholder="Hello world" type="text" name="title" id="title" value="">
+
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="create_a">Créer</a>
+			    </div>
+			  </div>
+				<!--  fin modal test-->
+
+
+				<div class='col s12 center'>
+					<button type="button" name="button" id='add_paragraphe' class='waves-effect waves-light btn'><i class='left material-icons'>add</i>
+						Ajouter un paragraphe
+					</button>
+
+					<!-- <div id="new_paragraphe">
+						<textarea name="content" rows="8" cols="80" id="content"></textarea>
+						<button type="button" name="button" id='create_p' class='waves-effect waves-light btn'><i class='left material-icons'>add</i>
+							Ajouter
+						</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="public/js/jquery-1.8.3.js" ></script>
+	<script type="text/javascript" src="public/js/jquery-ui-1.9.2.custom.js"></script>
+	<script type="text/javascript" src="public/js/application.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</html>
